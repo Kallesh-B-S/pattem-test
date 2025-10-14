@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { JobsContext } from '../context/JobsContext';
 
-function Job() {
+function JobDetails() {
     const { jobs, setApplied, applied } = useContext(JobsContext);
     const { jobid } = useParams();
 
@@ -49,4 +49,4 @@ function Job() {
     );
 }
 
-export default Job;
+export default JobDetails;
