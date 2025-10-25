@@ -8,7 +8,7 @@ function App() {
 
   return (
     <Layout>
-      <BrowserRouter>
+      <BrowserRouter basename={`${import.meta.env.VITE_BASE_URL}`}>
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/jobs/:jobid" element={<JobDetails />}></Route>

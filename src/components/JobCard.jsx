@@ -8,7 +8,7 @@ function JobCard({ job }) {
             <div className='mx-auto'><span className='font-bold'>company</span> : {job.company}</div>
             <div className='mx-auto'><span className='font-bold'>Location</span> : {job.location}</div>
             <div className='mx-auto'><span className='font-bold'>AI Match Score</span> : {job.ai_match_score}</div>
-            <Link to={`/jobs/${job.id}`} className='text-blue-600 mx-auto'>View</Link>
+            <Link to={`jobs/${job.id}`} className='text-blue-600 mx-auto'>View</Link>
         </div>
     )
 }
